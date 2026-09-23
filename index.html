@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GDR2 → WBGDR2</title>
+</head>
+<body>
+<main class="app">
+<h1>GDR2 → WBGDR2</h1>
+<p>Convertidor experimental de replays de Geometry Dash.</p>
+<section class="card">
+<label class="drop" id="drop">
+<input id="file" type="file" accept=".gdr2,.gdr">
+<strong>Selecciona un .gdr2</strong>
+<span>o arrástralo aquí</span>
+</label>
+<button id="convert" disabled>Convertir a .wbgdr2</button>
+<p id="status">Esperando archivo…</p>
+</section>
+<section class="card" id="info" hidden>
+<h2>Replay</h2><div id="details"></div>
+</section>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
