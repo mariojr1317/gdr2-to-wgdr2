@@ -1,4 +1,3 @@
-import "./style.css";
 import { parseGDR2 } from "./gdr2.js";
 import { convertToWBGDR2 } from "./wbgdr2.js";
 
