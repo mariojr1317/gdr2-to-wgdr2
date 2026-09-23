@@ -54,6 +54,7 @@ export function parseGDR2(input){
  for(let i=0;i<count;i++){
    const player2=i>=p1Count;
    const p=unpack(varint(b,s),r.platformer);
+   if(inputTag.length>0){const ex=varint(b,s);bytes(b,s,ex);}
    const list=player2?p2:p1;
    const prev=list.length?list[list.length-1].frame:0;
    list.push({frame:prev+p.frameDelta,button:p.button,player2,down:p.down});
